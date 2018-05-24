@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2218140C20B6BDDB00637490 /* iMFAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2218140B20B6BDDB00637490 /* iMFAD.framework */; };
 		221AE527206E0C9E0055DD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221AE526206E0C9E0055DD1A /* AppDelegate.swift */; };
 		221AE529206E0C9E0055DD1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221AE528206E0C9E0055DD1A /* ViewController.swift */; };
 		221AE52C206E0C9E0055DD1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221AE52A206E0C9E0055DD1A /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		221AE534206E0C9E0055DD1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221AE532206E0C9E0055DD1A /* LaunchScreen.storyboard */; };
 		221AE53F206E0C9E0055DD1A /* CFiNativeAdSwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221AE53E206E0C9E0055DD1A /* CFiNativeAdSwiftSampleTests.swift */; };
 		221AE54A206E0C9E0055DD1A /* CFiNativeAdSwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221AE549206E0C9E0055DD1A /* CFiNativeAdSwiftSampleUITests.swift */; };
-		221AE558206E0CCD0055DD1A /* iMFAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221AE557206E0CCD0055DD1A /* iMFAD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2218140B20B6BDDB00637490 /* iMFAD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iMFAD.framework; sourceTree = "<group>"; };
 		221AE523206E0C9E0055DD1A /* CFiNativeAdSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFiNativeAdSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		221AE526206E0C9E0055DD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		221AE528206E0C9E0055DD1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		221AE545206E0C9E0055DD1A /* CFiNativeAdSwiftSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFiNativeAdSwiftSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221AE549206E0C9E0055DD1A /* CFiNativeAdSwiftSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFiNativeAdSwiftSampleUITests.swift; sourceTree = "<group>"; };
 		221AE54B206E0C9E0055DD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		221AE557206E0CCD0055DD1A /* iMFAD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iMFAD.framework; sourceTree = "<group>"; };
 		221AE559206E0D110055DD1A /* CFiNativeAdSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CFiNativeAdSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221AE558206E0CCD0055DD1A /* iMFAD.framework in Frameworks */,
+				2218140C20B6BDDB00637490 /* iMFAD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		221AE51A206E0C9E0055DD1A = {
 			isa = PBXGroup;
 			children = (
-				221AE557206E0CCD0055DD1A /* iMFAD.framework */,
+				2218140B20B6BDDB00637490 /* iMFAD.framework */,
 				221AE525206E0C9E0055DD1A /* CFiNativeAdSwiftSample */,
 				221AE53D206E0C9E0055DD1A /* CFiNativeAdSwiftSampleTests */,
 				221AE548206E0C9E0055DD1A /* CFiNativeAdSwiftSampleUITests */,
