@@ -2,7 +2,7 @@
 //  MFNativeAd.h
 //  iMFAD
 //
-//  Created by 郭堯彰 on 2017/8/18.
+//  Created by Charles on 2017/8/18.
 //  Copyright © 2017年 clickforce. All rights reserved.
 //
 
@@ -15,10 +15,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
+/**
+ 請求廣告失敗
+ */
 - (void)onMFNativeAdRequestFail;
 
+/**
+ 成功請求原生廣告
+ */
 - (void)onMFNativeAdDidLoad:(MFNativeAd *)nativeAd;
 
+/**
+ 點擊廣告後
+ */
 - (void)onMFNativeAdClick:(MFNativeAd *)nativeAd;
 
 @end
@@ -51,6 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark The whole area of the UIView will be clickable.
 - (void)registerViewForInteraction:(UIView *_Nullable)view
                 withViewController:(nullable UIViewController *)viewController;
+
+#pragma mark 如果Ad有設定在Scrollview上
+-(void)setScrollviewName:(UIView *)uscro;
 
 @end
 

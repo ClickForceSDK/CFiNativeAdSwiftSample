@@ -34,9 +34,20 @@ CGSize MFCGSizeFromGADAdSize(MFAdSize size);
 @protocol MFBannerDelegate <NSObject>
 
 @optional
-//回傳廣告查詢狀態
+
+/**
+ 請求廣告失敗
+ */
 - (void)requestAdFail;
+
+/**
+ 成功請求廣告
+ */
 - (void)requestAdSuccess;
+
+/**
+ 點擊廣告後
+ */
 - (void)onClickAd;
 @end
 
@@ -76,6 +87,8 @@ CGSize MFCGSizeFromGADAdSize(MFAdSize size);
 #pragma mark - 設定對齊方式
 - (void)setBannerAlignment:(int)alignment;
 
+#pragma mark - 如果Ad有設定在Scrollview上
+-(void)setScrollviewName:(UIView *)uscro;
 
 #pragma mark - 關閉目前呈現的廣告，但不會將Banner從Superview中移除
 - (void)close;

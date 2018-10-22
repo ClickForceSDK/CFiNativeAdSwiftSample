@@ -44,14 +44,17 @@ extension ViewController:MFNativeDelegate{
     
     func onMFNativeAdDidLoad(_ nativeAd: MFNativeAd) {
         
-        nativeAd.registerView(forInteraction: self.adView, with: self);
         self.adTitle.text = nativeAd.title;
         self.adBody.text = nativeAd.content;
         self.adButtonText.setTitle(nativeAd.buttonTitle, for: .normal);
         self.advertiser.text = nativeAd.advertiser;
         nativeAd.coverImg?.loadAsync(block: { image in
             self.coverImage.image = image;
-        })    }
+        })
+        nativeAd.registerView(forInteraction: self.adView, with: self);
+    }
+    
+    
     
     func onMFNativeAdRequestFail() {
         print("請求廣告失敗");

@@ -2,7 +2,7 @@
 //  MFInterstitialView.h
 //  iMFAD
 //
-//  Created by 郭堯彰 on 2017/8/3.
+//  Created by Charles on 2017/8/3.
 //  Copyright © 2017年 clickforce. All rights reserved.
 //
 
@@ -12,15 +12,31 @@
 @protocol MFInterstitialViewDelegate <NSObject>
 
 @optional
-//回傳廣告查詢狀態
+/**
+ 請求廣告失敗
+ */
 - (void)onRequestItstAdFail;
 
+/**
+ 成功請求廣告
+ */
 - (void)onRequestItstAdSuccess;
 
+/**
+ 蓋版廣告點擊後
+ */
 - (void)onClickItst;
 
+/**
+ 關閉蓋板廣告後
+ */
 - (void)onCloseItst;
 
+/**
+ 選擇無框蓋版廣告，取得蓋版廣告方法
+
+ @param adInterstitialView 蓋版廣告
+ */
 - (void)onNotCloseBtnItst:(UIView *)adInterstitialView;
 
 @end
