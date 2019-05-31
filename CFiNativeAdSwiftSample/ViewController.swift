@@ -51,7 +51,7 @@ extension ViewController:MFNativeDelegate{
         nativeAd.coverImg?.loadAsync(block: { image in
             self.coverImage.image = image;
         })
-        nativeAd.registerView(forInteraction: self.adView, with: self);
+        nativeAd.registerElementsView(self.adView, clickView: [self.adTitle,self.adBody,self.adButtonText], controllervw: self);
     }
     
     

@@ -58,11 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)version;
 
 #pragma mark The whole area of the UIView will be clickable.
-- (void)registerViewForInteraction:(UIView *_Nullable)view
-                withViewController:(nullable UIViewController *)viewController;
-
-#pragma mark 如果Ad有設定在Scrollview上
--(void)setScrollviewName:(UIView *)uscro;
+- (void)registerElementsView:(UIView *)elementsView clickView:(NSArray<UIView *> *)view controllervw:(UIViewController *)viewController;
 
 @end
 
