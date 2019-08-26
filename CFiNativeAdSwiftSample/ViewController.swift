@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.native = MFNativeAd();
-        self.native?.bannerId = "5229"; //測試版位
+        self.native?.bannerId = "8384"; //測試版位
         self.native?.delegate = self;
         self.native?.request();
         
